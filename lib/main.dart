@@ -15,6 +15,7 @@ import 'ui/screens/skeleton_screen.dart';
 import 'package:firebase_core/firebase_core.dart';
 
 import 'auth_gate.dart';
+
 /// Try using const constructors as much as possible!
 
 void main() async {
@@ -38,7 +39,7 @@ void main() async {
         path: 'assets/translations',
         supportedLocales: const <Locale>[
           Locale('en'),
-          Locale('de'),
+          Locale('ar'),
         ],
         fallbackLocale: const Locale('en'),
         useFallbackTranslations: true,

@@ -35,11 +35,11 @@ class FirstScreen extends ConsumerWidget {
                   /// The initial locale is automatically determined by the library.
                   /// Changing the locale like this will persist the selected locale.
                   context.setLocale(
-                      newValue ? const Locale('de') : const Locale('en'));
+                      newValue ? const Locale('ar') : const Locale('en'));
                 },
                 shape: const RoundedRectangleBorder(
                     borderRadius: BorderRadius.all(Radius.circular(12))),
-                value: context.locale == const Locale('de'),
+                value: context.locale == const Locale('ar'),
                 title: Row(
                   children: <Widget>[
                     Icon(Ionicons.language_outline,
