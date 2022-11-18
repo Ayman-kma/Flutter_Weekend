@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "61490727644",
+    "project_id": "flutterweekend-21a53",
+    "storage_bucket": "flutterweekend-21a53.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:61490727644:android:3c1df1f72babd213600219",
+        "android_client_info": {
+          "package_name": "dev.feichtinger.flutter_production_boilerplate_riverpod"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "61490727644-joc2c27e588ntn6elgju1argupu9d2ev.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDr3r0PfaOXJpzgAWAHPGdKSEdlLmd79W8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "61490727644-joc2c27e588ntn6elgju1argupu9d2ev.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "61490727644-5mcl77mi9erkn469s30rlgh2ndv9qc59.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.flutterweekend"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
