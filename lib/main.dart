@@ -14,6 +14,8 @@ import 'ui/screens/skeleton_screen.dart';
 
 import 'package:firebase_core/firebase_core.dart';
 
+import 'auth_gate.dart';
+
 /// Try using const constructors as much as possible!
 
 void main() async {
@@ -68,7 +70,7 @@ class MyApp extends ConsumerWidget {
       supportedLocales: context.supportedLocales,
       locale: context.locale,
       debugShowCheckedModeBanner: false,
-      home: const SkeletonScreen(),
+      home: const AuthGate(),
     );
   }
 }
