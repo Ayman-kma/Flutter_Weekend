@@ -8,14 +8,21 @@ import 'package:hive_flutter/adapters.dart';
 import 'package:path_provider/path_provider.dart';
 
 import 'config/theme.dart';
+import 'firebase_options.dart';
 import 'states/theme_mode_state.dart';
 import 'ui/screens/skeleton_screen.dart';
+
+import 'package:firebase_core/firebase_core.dart';
 
 /// Try using const constructors as much as possible!
 
 void main() async {
   /// Initialize packages
   WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp(
+    options: DefaultFirebaseOptions.currentPlatform,
+  );
+
   await EasyLocalization.ensureInitialized();
   if (Platform.isAndroid) {
     await FlutterDisplayMode.setHighRefreshRate();
