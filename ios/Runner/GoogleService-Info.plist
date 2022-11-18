@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>61490727644-928pqri9k9k3tblm0co123vfb9oe7pnd.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.61490727644-928pqri9k9k3tblm0co123vfb9oe7pnd</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCwQUl7taSSbzFmOVYKZN9GRuLB71RCZB8</string>
+	<key>GCM_SENDER_ID</key>
+	<string>61490727644</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>dev.feichtinger.flutterProductionBoilerplateRiverpod</string>
+	<key>PROJECT_ID</key>
+	<string>flutterweekend-21a53</string>
+	<key>STORAGE_BUCKET</key>
+	<string>flutterweekend-21a53.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:61490727644:ios:8623816489b3f66a600219</string>
+</dict>
+</plist>
