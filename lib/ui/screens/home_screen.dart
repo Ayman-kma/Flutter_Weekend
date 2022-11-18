@@ -7,6 +7,12 @@ import 'package:ionicons/ionicons.dart';
 import '../widgets/first_screen/info_card.dart';
 import '../widgets/first_screen/theme_card.dart';
 import '../widgets/header.dart';
+import 'package:cloud_firestore/cloud_firestore.dart';
+
+CollectionReference eventData = FirebaseFirestore.instance.collection("Event");
+
+final getEvent =
+    StreamProvider.autoDispose<QuerySnapshot>((ref) => eventData.snapshots());
 
 class HomeScreen extends ConsumerWidget {
   const HomeScreen({super.key});
@@ -15,6 +21,8 @@ class HomeScreen extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
+    var eventData = ref.watch(getEvent);
+
     return Material(
       color: Theme.of(context).colorScheme.background,
       child: ListView(
@@ -24,24 +32,34 @@ class HomeScreen extends ConsumerWidget {
             const Header(text: 'app_name'),
 
             const SizedBox(height: 8),
-            SingleChildScrollView(
-              scrollDirection: Axis.horizontal,
-              child: Row(
-                children: [
-                  CategorySection(
-                    title: "category1 ",
+            eventData.when(
+              data: ((data) {
+                return SingleChildScrollView(
+                  scrollDirection: Axis.horizontal,
+                  child: Row(
+                    children: [
+                      CategorySection(
+                        title: "category1 ",
+                      ),
+                      CategorySection(
+                        title: "category 2 ",
+                      ),
+                      CategorySection(
+                        title: "category 3 ",
+                      ),
+                      CategorySection(
+                        title: "category 4 ",
+                      ),
+                    ],
                   ),
-                  CategorySection(
-                    title: "category 2 ",
-                  ),
-                  CategorySection(
-                    title: "category 3 ",
-                  ),
-                  CategorySection(
-                    title: "category 4 ",
-                  ),
-                ],
-              ),
+                );
+              }),
+              error: (Object error, StackTrace? stackTrace) {
+                return Text(error.toString());
+              },
+              loading: () {
+                return CircularProgressIndicator();
+              },
             ),
 
             /// Example: Good way to add space between items without using Paddings

@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../../../states/theme_mode_state.dart';
- 
-class CategorySection extends ConsumerWidget {
+import 'package:cloud_firestore/cloud_firestore.dart';
+ class CategorySection extends ConsumerWidget {
   const CategorySection({
     super.key,
     required this.title,
@@ -14,6 +14,7 @@ class CategorySection extends ConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final ThemeModeState state = ref.watch(themeProvider);
+
 
     return Card(
       elevation: 2,

@@ -6,12 +6,21 @@ import 'package:ionicons/ionicons.dart';
 import '../widgets/first_screen/info_card.dart';
 import '../widgets/first_screen/theme_card.dart';
 import '../widgets/header.dart';
+import 'package:cloud_firestore/cloud_firestore.dart';
+
+CollectionReference eventData = FirebaseFirestore.instance.collection("Event");
+
+final getEvent =
+    StreamProvider.autoDispose<QuerySnapshot>((ref) => eventData.snapshots());
+
+
 
 class FirstScreen extends ConsumerWidget {
   const FirstScreen({super.key});
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
+
     return Material(
       color: Theme.of(context).colorScheme.background,
       child: ListView(
