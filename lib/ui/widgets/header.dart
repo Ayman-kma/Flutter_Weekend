@@ -11,8 +11,8 @@ class Header extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.only(left: 2, right: 2, top: 48, bottom: 24),
       child: Text(
-        tr(text),
-        textAlign: TextAlign.start,
+        "Hi, Ahmed",
+        textAlign: TextAlign.center,
         style: Theme.of(context)
             .textTheme
             .headlineMedium!
