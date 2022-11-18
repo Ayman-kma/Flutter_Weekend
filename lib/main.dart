@@ -11,7 +11,6 @@ import 'config/theme.dart';
 import 'states/theme_mode_state.dart';
 import 'ui/screens/skeleton_screen.dart';
 
-
 /// Try using const constructors as much as possible!
 
 void main() async {
@@ -31,7 +30,7 @@ void main() async {
         path: 'assets/translations',
         supportedLocales: const <Locale>[
           Locale('en'),
-          Locale('de'),
+          Locale('ar'),
         ],
         fallbackLocale: const Locale('en'),
         useFallbackTranslations: true,
