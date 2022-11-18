@@ -11,6 +11,7 @@ import 'config/theme.dart';
 import 'states/theme_mode_state.dart';
 import 'ui/screens/skeleton_screen.dart';
 
+
 /// Try using const constructors as much as possible!
 
 void main() async {
