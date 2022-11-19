@@ -23,7 +23,7 @@ void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp(
     options: DefaultFirebaseOptions.currentPlatform,
-  );
+  );+
 
   await EasyLocalization.ensureInitialized();
   if (Platform.isAndroid) {
@@ -70,7 +70,10 @@ class MyApp extends ConsumerWidget {
       supportedLocales: context.supportedLocales,
       locale: context.locale,
       debugShowCheckedModeBanner: false,
-      home: const AuthGate(),
+      home: AuthGate(),
+      routes: {
+        "/":(context) => AuthGate()
+      },
     );
   }
 }

@@ -57,13 +57,12 @@ class _backgroundLocationState extends State<backgroundLocation> {
       }
     }
     _locationData = await location.getLocation();
-    print(_locationData);
-    print("_locationData");
+    // print(_locationData);
+    // print("_locationData");
 
     location.enableBackgroundMode(enable: true);
     location.onLocationChanged.listen((LocationData currentLocation) {
-      print(currentLocation!.latitude.toString());
-      print(currentLocation.longitude.toString());
+
       setState(() {
         curentLocationDD = currentLocation!.latitude.toString();
       });

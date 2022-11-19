@@ -20,7 +20,6 @@ class FirstScreen extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-
     return Material(
       color: Theme.of(context).colorScheme.background,
       child: ListView(
